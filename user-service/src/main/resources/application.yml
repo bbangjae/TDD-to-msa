@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: local
+  config:
+    import: "configserver:"
+  cloud:
+    config:
+      discovery:
+        enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_DEFAULT_ZONE}
