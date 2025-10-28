@@ -37,7 +37,9 @@ out/
 .vscode/
 
 ### .env ###
-.env
+env.properties
+*.env
+.env.local
 
 ### Q Classes
 **/generated/
